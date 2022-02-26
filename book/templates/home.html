@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome to django</title>
+</head>
+<body>
+
+<!-- <h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<a href="https://www.w3schools.com">This is a link</a>
+
+<p>This is a <br> paragraph with a line break.</p>
+<p style="color:red;">This is a red paragraph.</p> -->
+
+<h1>Book Form</h1>
+<hr>
+<form action="{% url 'homepage' %}" method="post">
+    {% csrf_token %}
+    
+    {% if single_book %}
+        Book ID:- <input type="text" name="bid" value="{{single_book.id}}" readonly><br><br>
+    {% endif %}
+
+    Book Name:- <input type="text" name="bname" value="{{single_book.name}}" placeholder="Enter book name"><br><br>
+    Book Price:- <input type="number" name="bprice" value="{{single_book.price}}" placeholder="Enter book price"><br><br>
+    Book Qty:- <input type="number" name="bqty" value="{{single_book.qty}}" placeholder="Enter book qty"><br><br>
+
+    <input type="submit" value="submit">
+
+</form>
+<br>
+<a href="{% url 'show_all_books' %}">Show books</a>
+
+
+</body>
+</html>

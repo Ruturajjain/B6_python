@@ -1,0 +1,18 @@
+In homepage view
+[2022-02-01 17:23:51] INFO In homepage view
+[2022-02-01 17:24:49] INFO In homepage view
+[2022-02-01 17:24:50] INFO In homepage view
+[2022-02-01 17:25:56] INFO In homepage view
+[2022-02-01 17:25:59] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>]>
+[2022-02-01 17:26:01] INFO In homepage view
+[2022-02-01 17:27:27] INFO In homepage view
+[2022-02-01 17:27:27] INFO <class 'book.models.Book'>
+[2022-02-01 17:27:27] INFO In homepage view
+[2022-02-02 13:56:23] INFO In homepage view
+[2022-02-02 15:28:33] INFO In homepage view
+[2022-02-02 15:28:40] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>, <Book: qwer>]>
+[2022-02-02 15:28:46] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>, <Book: qwer>]>
+[2022-02-02 15:29:28] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>, <Book: qwer>]>
+[2022-02-02 15:29:41] INFO In homepage view
+[2022-02-02 15:29:47] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>, <Book: qwer>]>
+[2022-02-02 15:29:50] INFO all data- <QuerySet [<Book: book1>, <Book: book2>, <Book: book3>, <Book: book4>, <Book: book4>, <Book: abcd>, <Book: poil>, <Book: qwer>]>
