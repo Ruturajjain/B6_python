@@ -38,3 +38,10 @@ class Employee(models.Model):
         
     def __str__(self):
         return self.first_name
+    
+    
+class Employee(models.Model):  
+    video = models.CharField(max_length=30)  
+    
+    class Meta:
+        db_table = "video"

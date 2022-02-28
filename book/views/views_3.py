@@ -292,3 +292,9 @@ class EmployeeDelete(DeleteView):
     model = Employee  
     template_name_suffix = '_delete'
     success_url = reverse_lazy('book:EmployeeRetrieve') 
+    
+    
+    
+def product_video(request):
+    print('in product video')
+    return HttpResponse('video')
