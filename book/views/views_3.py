@@ -292,3 +292,15 @@ class EmployeeDelete(DeleteView):
     model = Employee  
     template_name_suffix = '_delete'
     success_url = reverse_lazy('book:EmployeeRetrieve') 
+    
+    
+    
+from django.contrib.auth import login, logout, authenticate
+
+def user_login(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    user = authenticate(username,password)
+    if user:
+        login(request, user)
+        return HttpResponse('successfully logged in..')
