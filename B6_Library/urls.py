@@ -35,7 +35,8 @@ urlpatterns = [
     path('Home_cbv/', views.Homepage.as_view(), name = "Homepage"),
     path('template_cbv/', views.CBVtemplateview.as_view(), name = "template_cbv"),
     
-    path('', include(('book.urls'), namespace='book')),
+    path('', include(('book.urls'), namespace='book')), 
+    path('product_video/', views.product_video, name = "product_video"),
     path('user_login/', views.user_login, name = "user_login"),
      
     # path('emp-gcreate/', views.EmployeeCreate.as_view(), name = "EmployeeCreate"),

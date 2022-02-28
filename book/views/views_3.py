@@ -295,6 +295,9 @@ class EmployeeDelete(DeleteView):
     
     
     
+def product_video(request):
+    print('in product video')
+    return HttpResponse('video')
 from django.contrib.auth import login, logout, authenticate
 
 def user_login(request):
