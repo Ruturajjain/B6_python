@@ -298,3 +298,12 @@ class EmployeeDelete(DeleteView):
 def product_video(request):
     print('in product video')
     return HttpResponse('video')
+from django.contrib.auth import login, logout, authenticate
+
+def user_login(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    user = authenticate(username,password)
+    if user:
+        login(request, user)
+        return HttpResponse('successfully logged in..')

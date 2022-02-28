@@ -37,6 +37,8 @@ urlpatterns = [
     
     path('', include(('book.urls'), namespace='book')), 
     path('product_video/', views.product_video, name = "product_video"),
+    path('user_login/', views.user_login, name = "user_login"),
+     
     # path('emp-gcreate/', views.EmployeeCreate.as_view(), name = "EmployeeCreate"),
     # path('emp-retrive/', views.EmployeeRetrieve.as_view(), name = "EmployeeRetrieve"),
     # path('emp-retrive/<int:pk>/', views.EmployeeDetail.as_view(), name = "EmployeeDetail"),
