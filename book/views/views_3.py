@@ -307,6 +307,3 @@ def user_login(request):
     if user:
         login(request, user)
         return HttpResponse('successfully logged in..')
-
-def func():
-    print('in function 1')
