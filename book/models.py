@@ -40,8 +40,3 @@ class Employee(models.Model):
         return self.first_name
     
     
-class Employee(models.Model):  
-    video = models.CharField(max_length=30)  
-    
-    class Meta:
-        db_table = "video"
